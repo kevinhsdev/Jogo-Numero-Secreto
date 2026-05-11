@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=vscode,javascript,html,css" />
     
-  ![Status](https://img.shields.io/badge/Status-Concluído-639922?style=for-the-badge)
+  ![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
 </p>
 
 ---
