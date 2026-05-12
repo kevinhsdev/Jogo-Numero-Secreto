@@ -4,14 +4,14 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=vscode,javascript,html,css" />
     
-  ![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
+ ![Status](https://img.shields.io/badge/Status-Concluído-639922?style=for-the-badge)
 </p>
 
 ---
  
 ## 📖 Sobre o projeto
  
-Jogo de adivinhação em JavaScript puro, desenvolvido como exercício de lógica e fundamentos da linguagem. O programa gera um número aleatório dentro de um intervalo configurável, e o jogador tenta acertá-lo por meio de dicas interativas. O projeto também conta com uma interface visual em HTML/CSS com tema escuro e identidade própria.
+Jogo de adivinhação em JavaScript puro. Gera um número secreto aleatório e dá dicas ao jogador até ele acertar, contando as tentativas.
  
 ---
  
@@ -22,21 +22,24 @@ Jogo de adivinhação em JavaScript puro, desenvolvido como exercício de lógic
 | 🎲 Número aleatório | Gerado com `Math.random()` dentro do intervalo definido |
 | 💬 Dicas interativas | Informa se o número secreto é maior ou menor que o chute |
 | 🔢 Contador de tentativas | Registra quantas tentativas o jogador usou |
+| 🔊 Leitura por voz | Integração com `ResponsiveVoice` para narrar as dicas |
 | 🏆 Mensagem de vitória | Exibe o número secreto e o total de tentativas ao acertar |
-| ⚙️ Dificuldade configurável | Basta alterar `numeroMaximo` no código para ajustar o desafio |
+| 🔄 Botão "Novo jogo" | Reinicia o jogo sem recarregar a página |
  
 ---
  
 ## 🖥️ Demonstração
  
 ```
-> Boas vindas ao jogo do numero secreto!
-> Digite um numero entre 1 e 5000: 2500
-> O numero secreto é menor que 2500!
-> Digite um numero entre 1 e 5000: 1000
-> O numero secreto é maior que 1000!
-> Digite um numero entre 1 e 5000: 1742
-> Isso ai! Você descobriu o numero secreto, 1742! E acertou em 3 tentativas!
+[Interface web]
+ 
+Digite um número entre 1 e 100: [ 50 ] [Chutar]
+ 
+→ O número secreto é menor que 50!
+→ O número secreto é maior que 20!
+→ Você descobriu o número secreto 37 em 3 tentativas!
+ 
+[Novo jogo]
 ```
  
 ---
@@ -44,15 +47,12 @@ Jogo de adivinhação em JavaScript puro, desenvolvido como exercício de lógic
 ## 📁 Estrutura do projeto
  
 ```
-jogo-numero-secreto/
-├── index.html       # Interface visual do jogo
+Jogo-Numero-Secreto/
+├── index.html       # Interface do jogo com DOM completo
 ├── style.css        # Estilização com tema dark
 ├── app.js           # Lógica do jogo em JavaScript
 └── img/
-    ├── robot.png    # Imagem do robô
-    ├── trophy.png   # Ícone de troféu
-    ├── code.png     # Imagem decorativa de código
-    └── Ruido.png    # Textura de fundo do card
+    └── ia.png       # Imagem da personagem
 ```
  
 ---
@@ -61,24 +61,24 @@ jogo-numero-secreto/
  
 ```bash
 # Clone o repositório
-git clone https://github.com/kevinhsdev/jogo-numero-secreto
+git clone https://github.com/kevinhsdev/Jogo-Numero-Secreto
  
 # Acesse a pasta do projeto
-cd jogo-numero-secreto
+cd Jogo-Numero-Secreto
  
-# Abra o arquivo no navegador
-# Basta abrir o index.html diretamente ou usar a extensão Live Server no VS Code
+# Abra o index.html no navegador
+# Recomendado: usar a extensão Live Server no VS Code
 ```
  
 ---
  
 ## 🔮 Melhorias futuras
  
-- [ ] Substituir `alert()` e `prompt()` por interface DOM completa
-- [ ] Adicionar modo de dificuldade com seleção de intervalo
+- [ ] Adicionar seleção de dificuldade (fácil / médio / difícil)
 - [ ] Implementar histórico de tentativas na tela
-- [ ] Adicionar botão de reiniciar sem recarregar a página
+- [ ] Adicionar animações de acerto e erro
 - [ ] Tornar o layout responsivo para mobile
+- [ ] Salvar recorde de tentativas com `localStorage`
 ---
  
 ## 👨‍💻 Autor
